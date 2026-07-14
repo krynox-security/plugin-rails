@@ -17,8 +17,8 @@ require "krynox/captcha/version"
 #   end
 module Krynox
   module Captcha
-    DEFAULT_API_HOST = "https://api.krynox.id"
-    DEFAULT_CDN_HOST = "https://cdn.krynox.id"
+    DEFAULT_API_HOST = "https://api.krynox.net"
+    DEFAULT_CDN_HOST = "https://cdn.krynox.net"
 
     # Runtime configuration (defaults from ENV).
     class Config

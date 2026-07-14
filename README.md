@@ -21,8 +21,8 @@ Configure (defaults read from `ENV`):
 Krynox::Captcha.configure do |c|
   c.site_key   = ENV["KRYNOX_SITE_KEY"]
   c.secret_key = ENV["KRYNOX_SECRET_KEY"]
-  # c.api_host = "https://api.krynox.id"  # self-hosting
-  # c.cdn_host = "https://cdn.krynox.id"
+  # c.api_host = "https://api.krynox.net"  # self-hosting
+  # c.cdn_host = "https://cdn.krynox.net"
 end
 ```
 
@@ -61,4 +61,4 @@ result = Krynox::Captcha.verify(params["krynox-captcha"], remoteip: request.remo
 
 ## License
 
-MIT. Built for [Krynox Captcha](https://krynox.id) · docs: <https://krynox.id/docs>
+MIT. Built for [Krynox Captcha](https://krynox.net) · docs: <https://krynox.net/docs>
