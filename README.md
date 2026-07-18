@@ -67,4 +67,4 @@ automatically (`config.retries`, default 2) with a per-verify idempotency key.
 
 ## License
 
-MIT. Built for [Krynox Captcha](https://krynox.net) · docs: <https://krynox.net/docs>
+MIT. Built for [Krynox Captcha](https://krynox.net) · docs: <https://docs.krynox.net>

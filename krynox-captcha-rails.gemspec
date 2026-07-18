@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.7"
 
   spec.metadata["source_code_uri"]   = "https://github.com/krynox-security/plugin-rails"
-  spec.metadata["documentation_uri"] = "https://krynox.net/docs"
+  spec.metadata["documentation_uri"] = "https://docs.krynox.net"
 
   spec.files         = Dir["lib/**/*.rb", "README.md", "LICENSE"]
   spec.require_paths = ["lib"]
