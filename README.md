@@ -57,7 +57,13 @@ end
 
 result = Krynox::Captcha.verify(params["krynox-captcha"], remoteip: request.remote_ip)
 # result[:success], result[:risk] => "low" | "medium" | "high"
+# result[:reasons] => ["tor-exit", ...]; result[:agent]; result[:human]
 ```
+
+`verify` returns the full contract — `:success`, `:score`, `:risk`, `:hostname`, `:challenge_ts`,
+`:error_codes`, `:reasons`, `:agent` (`{verified:, name:, allowlisted:}` or `nil`), `:human`
+(`{attested:, method:, issuer:}` or `nil`). Transient failures (network / 429 / 5xx) are retried
+automatically (`config.retries`, default 2) with a per-verify idempotency key.
 
 ## License
 
