@@ -8,7 +8,11 @@ module Krynox
     module ControllerHelpers
       # True when the submitted captcha verifies server-side.
       def krynox_captcha_verified?
-        Krynox::Captcha.verify(params["krynox-captcha"], remoteip: request.remote_ip)[:success]
+        Krynox::Captcha.verify(
+          params["krynox-captcha"],
+          remoteip: request.remote_ip,
+          honeypot: params["krynox-hp"]
+        )[:success]
       end
 
       # before_action guard: blocks the request on failure.

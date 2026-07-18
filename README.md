@@ -65,6 +65,15 @@ result = Krynox::Captcha.verify(params["krynox-captcha"], remoteip: request.remo
 (`{attested:, method:, issuer:}` or `nil`). Transient failures (network / 429 / 5xx) are retried
 automatically (`config.retries`, default 2) with a per-verify idempotency key.
 
+## Honeypot
+
+Enable **Honeypot** for the site in the Krynox dashboard and the widget injects an invisible decoy
+field (`krynox-hp`) that only bots fill in. The `require_krynox_captcha` / `krynox_captcha_verified?`
+helpers forward it to `/siteverify` as `honeypot` automatically — no code change needed (a manual
+`Krynox::Captcha.verify(token, honeypot: params["krynox-hp"])` call works too). The data plane then
+floors the score (report mode) or rejects with `honeypot-tripped` (enforce mode). See the
+[Honeypot docs](https://docs.krynox.net/server-side/honeypot/).
+
 ## License
 
 MIT. Built for [Krynox Captcha](https://krynox.net) · docs: <https://krynox.net/docs>

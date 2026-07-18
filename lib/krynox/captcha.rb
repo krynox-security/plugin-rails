@@ -48,7 +48,7 @@ module Krynox
       # Verify a solved token. Returns a Hash with :success, :score, :risk, :hostname,
       # :challenge_ts, :error_codes, :reasons, :agent, :human. :agent/:human are nested Hashes
       # (or nil) with the verified AI-agent / attested-human identity when forwarded.
-      def verify(response, remoteip: nil)
+      def verify(response, remoteip: nil, honeypot: nil)
         return fail_result(["missing-input-response"]) if response.nil? || response.to_s.empty?
 
         # A token is single-use, so a retried verify carries an idempotency key — the server returns
@@ -56,7 +56,8 @@ module Krynox
         key = config.retries.positive? ? SecureRandom.hex(16) : nil
         data = post(
           "#{config.api_host.chomp('/')}/siteverify",
-          secret: config.secret_key, response: response, remoteip: remoteip, idempotency_key: key
+          secret: config.secret_key, response: response, remoteip: remoteip,
+          honeypot: honeypot, idempotency_key: key
         )
         return fail_result(["request-failed"]) if data.nil?
 
