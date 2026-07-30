@@ -1,0 +1,62 @@
+{
+  "lib/krynox/captcha.rb": {
+    "mtime": 1784711053.5247366,
+    "ast_hash": "4c8fa5949a3196f0f662a4ed4237d147",
+    "semantic_hash": "4c8fa5949a3196f0f662a4ed4237d147"
+  },
+  "lib/krynox/captcha/controller_helpers.rb": {
+    "mtime": 1784711053.5248144,
+    "ast_hash": "5870d05fef597b5a7cad1771b2fb0424",
+    "semantic_hash": "5870d05fef597b5a7cad1771b2fb0424"
+  },
+  "lib/krynox/captcha/rails.rb": {
+    "mtime": 1782299103.9159968,
+    "ast_hash": "2f78aea356e2dbe1b0f4aaa2b58b68d5",
+    "semantic_hash": "2f78aea356e2dbe1b0f4aaa2b58b68d5"
+  },
+  "lib/krynox/captcha/railtie.rb": {
+    "mtime": 1782299094.849952,
+    "ast_hash": "8f1d1dd1e02de112ba105d0636667f27",
+    "semantic_hash": "8f1d1dd1e02de112ba105d0636667f27"
+  },
+  "lib/krynox/captcha/version.rb": {
+    "mtime": 1782299051.587737,
+    "ast_hash": "c9423b83321300da18c9b947cc23321b",
+    "semantic_hash": "c9423b83321300da18c9b947cc23321b"
+  },
+  "lib/krynox/captcha/view_helpers.rb": {
+    "mtime": 1782299080.4188802,
+    "ast_hash": "722136ab9fe9f0cd376153a0097ac5ba",
+    "semantic_hash": "722136ab9fe9f0cd376153a0097ac5ba"
+  },
+  "test/krynox_captcha_test.rb": {
+    "mtime": 1785087501.880056,
+    "ast_hash": "7958e5f6dbf9860bf3be22dc5fe34e98",
+    "semantic_hash": "7958e5f6dbf9860bf3be22dc5fe34e98"
+  },
+  ".github/workflows/ci.yml": {
+    "mtime": 1785087567.2743273,
+    "ast_hash": "2f0aa8f0fd66ad1073829ef7dd9565e0",
+    "semantic_hash": ""
+  },
+  ".github/workflows/release.yml": {
+    "mtime": 1784711159.537301,
+    "ast_hash": "0560930f7e18e0a76395b795120ad4d3",
+    "semantic_hash": ""
+  },
+  ".github/workflows/security.yml": {
+    "mtime": 1784711159.537962,
+    "ast_hash": "58ee6179ac18db40af75639b914ff25c",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1784714233.5468185,
+    "ast_hash": "d91f1ea14213ce80faef489e69988482",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784711053.5246673,
+    "ast_hash": "8031497dcead0c5011da4396fed6f6c3",
+    "semantic_hash": ""
+  }
+}
